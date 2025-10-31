@@ -20,7 +20,7 @@ public class Producer {
             @Override
             public LocalTransactionState executeLocalTransaction(Message message, Object o) {
                 System.out.println("执行了正常的事务过程。");
-                return LocalTransactionState.COMMIT_MESSAGE;
+                return LocalTransactionState.ROLLBACK_MESSAGE;
             }
 
             @Override
